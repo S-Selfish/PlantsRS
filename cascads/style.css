@@ -1,3 +1,6 @@
+
+/*Common Settings*/
+
 :root {
     --fzDesktopMain: 1rem;
     --fzDesktopSub: 0.8rem;
@@ -16,6 +19,10 @@
 * {
     font-size: var(--fzDesktopMain);
     color:var(--mainColorGray);
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -24,10 +31,10 @@ body {
     font-family: var(--ffInter);
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
-/*Common Settings*/
 .btn{
     font-family: var(--ffInika);
     color: var(--colorOrange);
@@ -48,6 +55,138 @@ body {
     font-family: var(--ffInter);
     color: var(--colorBlack);
     padding: 14px 27px;
+    background-color: transparent;
 }
 
+.btn_learn-more:hover {
+    background-color: var(--colorOrange);
+    color: var(--colorWhite);
+}
 
+.content-wrapper_gray {
+    background-color: var(--colorGray);
+}
+
+.content-wrapper_white {
+    background-color: var(--colorWhite);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0px 110px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: var(--fzDesktopCaption);
+}
+/*Header*/
+
+.header {
+    height: 134px;
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--colorGray);
+    align-items: center;
+}
+
+.header *{
+    font-size: var(--fzDesktopSub);
+    font-family: var(--ffInika);
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__logo-caption {
+    color: #010201;
+}
+
+.header__logo-img {
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+}
+
+.header__logo-img img{
+    width: 100%;
+    background-color: inherit;
+}
+
+.nav__bar {
+    display: flex;
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__link {
+    color: var(--colorBlack);
+}
+
+.nav__link:hover {
+    color: var(--colorOrange);
+}
+
+/*First frame*/
+
+.section-home {
+    display: flex;
+    align-items: center;
+    height: 532px;
+}
+
+.section-home__image {
+    height: 410px;
+}
+
+.section-home__image img{
+    height: 100%;
+}
+
+.section-home__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 224px;
+}
+
+.section-home__caption {
+    font-size: 2.25rem;
+}
+
+.span__green{
+    font-size: inherit;
+    color: var(--colorGreen);
+}
+.span__orange{
+    font-size: inherit;
+    color: var(--colorOrange);
+}
+
+.section-home__description {
+    margin: 42px 0px 48px 0px;
+    color: var(--subColorGray);
+}
+
+/*Second frame*/
+
+.section-about {
+    height: 666px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-about__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about__caption {
+    margin-bottom: 40px;
+    font-family: var(--ffInika);
+}
