@@ -1,0 +1,53 @@
+:root {
+    --fzDesktopMain: 1rem;
+    --fzDesktopSub: 0.8rem;
+    --fzDesktopCaption: 2rem;
+    --ffInika: 'Inika', serif;
+    --ffInter: 'Inter', sans-serif;
+    --colorOrange: #E06733;
+    --colorGreen: #499A18;
+    --colorBlack: #000;
+    --colorGray:#EDF2EC;
+    --colorWhite: #ffffff;
+    --subColorGray: #717171;
+    --mainColorGray: #636060;
+}
+
+* {
+    font-size: var(--fzDesktopMain);
+    color:var(--mainColorGray);
+}
+
+html,
+body {
+    font-size: 20px;
+    font-family: var(--ffInter);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*Common Settings*/
+.btn{
+    font-family: var(--ffInika);
+    color: var(--colorOrange);
+    padding: 12px 40px;
+    border: 1px solid var(--colorOrange);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: var(--colorWhite);
+    background-color: var(--colorOrange);
+}
+
+.btn_learn-more {
+    border: 2px solid var(--colorOrange);
+    border-radius: 10px;
+    font-family: var(--ffInter);
+    color: var(--colorBlack);
+    padding: 14px 27px;
+}
+
+
